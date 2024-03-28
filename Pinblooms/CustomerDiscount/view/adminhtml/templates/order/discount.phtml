@@ -1,0 +1,17 @@
+<?php
+/** @var \Pinblooms\CustomerDiscount\Block\Order\Discount $block */
+?>
+<?php if ($block->getDiscountType() && $block->getCustomerDiscount()): ?>
+<section class="admin__page-section order-addresses">
+    <div class="admin__page-section-title">
+        <span class="title"><?= $block->escapeHtml(__('Customer Discount')) ?></span>
+    </div>
+    <div class="order-discount">
+          <strong><?= $block->escapeHtml(__("Discount Type: ")) ?></strong>
+         <?= $block->escapeHtml($block->getDiscountType()) ?>
+         <strong><?= $block->escapeHtml(__("Discount: ")) ?></strong>
+        <?= $block->escapeHtml($block->getCustomerDiscount()) ?>
+        <?php if ($block->getDiscountType() == "Percentage"): ?>%<?php endif; ?>
+    </div>
+</section>
+<?php endif; ?>

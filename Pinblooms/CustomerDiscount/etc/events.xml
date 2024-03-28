@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="checkout_cart_product_add_after">
+        <observer name="apply_customer_discount" instance="Pinblooms\CustomerDiscount\Observer\Checkout\ApplyDiscountToProduct"/>
+    </event>
+    <event name="sales_order_place_after">
+        <observer name="set_custom_attribute_observer" instance="Pinblooms\CustomerDiscount\Observer\Checkout\StoreDiscountInformation" />
+    </event>
+</config>

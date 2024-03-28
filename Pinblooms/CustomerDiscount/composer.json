@@ -1,0 +1,27 @@
+{
+    "name": "CustomerDiscount/pinblooms",
+    "description": "For discount on the basis of customer and showing in orders.",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "authors": [
+        {
+            "name": "Mohit saini",
+            "email": "mukulsaini8363@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "~7.4||~8.0",
+        "magento/framework": "^102.0|^103.0|^104.0",
+        "magento/module-sales": "^102.0|^103.0|^104.0"
+    },
+    "autoload": {
+        "files": [ "registration.php" ],
+        "psr-4": {
+            "Pinblooms\\CustomerDiscount\\": ""
+        }
+    }
+}

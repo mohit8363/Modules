@@ -1,0 +1,7 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="order_additional_info">
+            <block class="Pinblooms\CustomerDiscount\Block\Order\Discount" name="order_view_discount" template="Pinblooms_CustomerDiscount::order/discount.phtml"/>
+        </referenceContainer>
+    </body>
+</page>
