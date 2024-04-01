@@ -122,7 +122,7 @@ class ApplyDiscountToProduct implements ObserverInterface
                 $customerId = $this->customerSession->getCustomerId();
                 // Retrieve customer by ID
                 $customer = $this->customerRepository->getById($customerId);
-                $customerDiscountAttribute = $this->customerSession->getCustomAttribute(
+                $customerDiscountAttribute = $customer->getCustomAttribute(
                     "customer_discount"
                 );
                 if ($customerDiscountAttribute) {
